@@ -1,14 +1,11 @@
 import os
 import shutil
+# change these to files for large images
+file_out_names =  ["rels-ext.rdf", "techmd.xml", "obj.pdf", "mods.xml" ]
+datastreams = ["RELS-EXT", "TECHMD", "OBJ", "MODS"]
 
-file_out_names =  ["rels-ext.rdf", "coll-pol.xml", "mods.xml" ]
-datastreams = ["RELS-EXT", "COLLECTION_POLICY", "MODS"]
-
-#we also need to get
-#filenames and datastreams for all other content types
-
-
-pids = ["lsu-thwcoh-betsy%3Acollection", "lsu-thwcoh-lsuhistory:collection"]
+#change these too
+pids = ["lsu-music-p16313coll69%3A2879", "lsu-music-p16313coll69%3A2878", "lsu-music-p16313coll69%3A2877"]
 
 #add a format the string with the path to a pid folder
 curl_string = "curl -o {2}/{0} https://louisianadigitallibrary.org/islandora/object/{2}/datastream/{1}/download"
