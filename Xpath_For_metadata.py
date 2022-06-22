@@ -16,7 +16,7 @@ z = zip(myTags, myText)
 for a in z:
     print(a)
 myDict = dict(z)
-for key in myDict:
+#for key in myDict:
 #print(key)
 #print(myDict[key])
 
