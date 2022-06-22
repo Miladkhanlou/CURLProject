@@ -1,7 +1,7 @@
 #import pandas as pd
 #from lxml import etree as et
 import xml.etree.ElementTree as ET
-data = ET.parse("mods.xml")
+data = ET.parse("audio/ull-acc%3A430/mods.xml")
 
 myTags = [item.tag for item in data.iter()]
 #print(myTags)
