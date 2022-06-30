@@ -12,7 +12,6 @@
 - Xpath_For_metadata.py finish mapping tags, map to field, write out to csv
 
 
-
 ## how to run commands
 
 ```sh oral_history/get.sh```
@@ -23,3 +22,19 @@
 
 inline
 > some inline lookin text 
+
+this is a good way to execute the code
+> cd audio
+> python3 python-curl-audio.py
+> cd ..
+
+now you have some datastreams from the ldl
+> ls audio 
+
+You'll see some new folders
+
+Now you can run Xpath_For_metadata.py
+> python3 loop_mods_etree_to_clean_list.py
+
+os_walk.py is a todo for the future
+to recurse through all the subdirectories, and pull ldl items for each content type
